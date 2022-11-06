@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background: url("./assets/images/background.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gridsHolder {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.bingoPiece {
+    color: white;
+    background: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 1.2em;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.cutMark {
+
+}
+
+.cutMark::after {
+    content: "";
+    
+    height: 3px;
+    width: 80px;
+    background: red;
+    position: absolute;
+    transform: rotateZ(45deg);
+}
+
